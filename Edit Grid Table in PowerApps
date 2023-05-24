@@ -1,8 +1,9 @@
-/* Using the sequence function to create an editable table to capture data in an excel like format inside Canvas Apps */
+/* Using the sequence function and collection to create an editable table to capture data in an excel like format inside Canvas Apps */
 
-Insert a ComboxBox
-Insert a gallery 
-Insert and Input Controls required into the gallery 
+Insert a ComboxBox/Dropdown Control 
 /*Change Item property into :*/  Sequence('Desired Number')
-/*Change the Combox OnChange property to create a variable with the sequence function :*/ UpdateContext({Grid, Self.Selected.Value})
+/*Change the Combox OnChange property to create a variable with the sequence function :*/ ClearCollect({Grid, Sequence(Self.Selected.Value))
+Insert a Vertical gallery 
+Insert and Input Controls required into the gallery 
 /* Change Gallery Item Property to the varibale */ Items = Grid
+
