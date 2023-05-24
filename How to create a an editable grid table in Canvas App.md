@@ -8,3 +8,4 @@ Insert and Input Controls required into the gallery
 /* Change Gallery Item Property to the varibale */ Items = Grid
 /* Use the ForAll function to extract all data entry*/
 
+![image](https://github.com/GeeksDam/PowerApps/assets/98710158/039c24e6-3975-4937-90d4-5199a3836c46)
