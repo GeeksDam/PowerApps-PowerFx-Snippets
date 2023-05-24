@@ -13,7 +13,7 @@ ClearCollect(Data, {Column1:"Data1",Column2:"Data2",Column3:"Data3"},{Column1:"D
 
  HTMLText Property : 
  "<center>" & "<b>" & "Data Table" &   "</center>"  & "</b>"&  "<br>" &"<table width='100%' border='1' cellpadding='4' style='border:1px solid black; border-collapse:collapse'>" & "<tr style='background-color:#efefef'>
-         <th>Column1 </th> <th> Column2 </th> <th> Column3 </th> 
+   <th>Column1 </th> <th> Column2 </th> <th> Column3 </th> 
      </tr> <tr>" &
          Concat(Data,
              "<td>" & Column1 & " </td>
