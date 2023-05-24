@@ -1,6 +1,6 @@
 /* One of the best practices on Canvas App development is using less controls for app best performance*/
 
-/* To display a collection data or a table inforation that rewuire oly vbiew operation ios best diaplayed using a HTML Text control and format with HTNL Table syntax*/
+/* To display a collection data or a table inforation that rewuire oly vbiew operation ios best diaplayed using a HTML Text control and format with HTML Table syntax*/
 
 /* I created a small collection to display on my HTML table here*/
 
@@ -18,9 +18,7 @@ ClearCollect(Data, {Column1:"Data1",Column2:"Data2",Column3:"Data3"},{Column1:"D
          Concat(Data,
              "<td>" & Column1 & " </td>
               <td>" & Column2 & " </td>
-                <td>" & Column3 & " </td>
- 
-
+ <td>" & Column3 & " </td>
     </tr><tr>") & "<tr> <td> Row Count: " &CountRows(Filter(Data,Not(Column1 = Blank()))) & "</td> <td>Row Count: " & CountRows(Filter(Data,Not(Column2 = Blank()))) & "</td> <td> Row Count: " &CountRows(Filter(Data,Not(Column3 = Blank()))) & "</td> </tr>" & 
 
 "</table>" 
