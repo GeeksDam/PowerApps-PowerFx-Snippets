@@ -29,3 +29,4 @@ ClearCollect(Data, {Column1:"Data1",Column2:"Data2",Column3:"Data3"},{Column1:"D
 
 
 
+[Table.txt](https://github.com/GeeksDam/PowerApps/files/11555838/Table.txt)
