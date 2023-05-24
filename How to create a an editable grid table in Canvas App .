@@ -6,4 +6,4 @@ Insert a ComboxBox/Dropdown Control
 Insert a Vertical gallery 
 Insert and Input Controls required into the gallery 
 /* Change Gallery Item Property to the varibale */ Items = Grid
-
+/* Use the ForAll function to extract all data entry*/
