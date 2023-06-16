@@ -1,0 +1,15 @@
+PowerFx Code 
+//Start Button  - UpdateContext({TimerSwitch: true})
+
+//End Button - UpdateContext({TimerSwitch:false});
+Reset(Timer1);
+
+
+//OnVisible to the screen -  If(TimerSwitch = true, 
+UpdateContext({TimerSwitch : false});
+UpdateContext({TimerSwitch:true}),"")
+
+//Timer Control (OnTimerEnd) -  If(TimerSwitch = true, Collect(LoctData, [{Time: Text(Now(), "HH:mm AM/PM"), Latitude : Location.Latitude, Longitude: Location
+.Longitude}]);
+UpdateContext({TimerSwitch : false});
+UpdateContext({TimerSwitch:true}) ,"")
