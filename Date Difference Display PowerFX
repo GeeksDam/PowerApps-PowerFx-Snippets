@@ -1,0 +1,54 @@
+Blog Link - https://medium.com/@olumideojoniyi/convert-days-counts-in-powerapps-into-days-ago-weeks-ago-months-ago-790ce43fd43c
+
+
+//CodeSnippet 
+
+With(
+    {
+        Date: DateDiff(
+            DateValue("31/0/2023"),
+            Today()
+        )
+    },// Dividing DateValue // Assign the Date Value to use into a variable 
+    If(
+        Date = 0,
+        "Today",//   Today prefix
+        If(
+            Date = 1,
+            Date & " " & "day" & " " & "ago",// day ago prefix
+            If(
+                (Date > 1 And Date <= 6),
+                Date & " " & "days" & " " & "ago",// days ago prefix 
+                If(
+                    Date = 7,
+                    "1 week" & " " & "ago",// 1 week prefix  
+                    If(
+                        (Date > 8 And Date <= 30),
+                        Round(
+                            Value(Date / 7),
+                            1
+                        ) & " " & "weeks" & " " & "ago",//weeks ago prefix
+                        If(
+                            Date = 30 Or Date = 31,
+                            "1 month ago",//1 month ago prefix 
+                            If(
+                                (Date > 31 And Date <= 365),
+                                Round(
+                                    Value(Date / 30),
+                                    0
+                                ) & " " & "months" & " " & "ago",// Months ago prefix
+                                If(
+                                    Date >= 365,
+                                    Round(
+                                        Value(Date / 365),
+                                        1
+                                    ) & " " & "Years" & " " & "ago"// Years ago prefix 
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    )
+)
