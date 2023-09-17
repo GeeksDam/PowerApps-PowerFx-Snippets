@@ -1,0 +1,143 @@
+//Full Blog link - https://medium.com/@olumideojoniyi/data-input-validation-in-powerapps-fd7e0b9b2db7
+
+//PowerFx Snippet 
+If(                          //ParentIf 
+    Sum(                     //Sum each countif value 
+        CountIf(             //Count Character Not in the Regex in AddressTxt
+            Split(
+                AddressTxt.Value,
+                ""
+            ),
+            Not(
+                IsMatch(
+                    Value,
+                    "([A-Za-z0-9])"
+                )
+            )
+        ),
+        CountIf(              //Count Character Not in the Regex in StateTxt
+            Split(
+                StateTxt.Value,
+                ""
+            ),
+            Not(
+                IsMatch(
+                    Value,
+                    "([A-Za-z0-9])"
+                )
+            )
+        ),
+        CountIf(            //Count Character Not in the Regex in CountryTxt
+            Split(
+                CountryTxt.Value,
+                ""
+            ),
+            Not(
+                IsMatch(
+                    Value,
+                    "([A-Za-z0-9])"
+                )
+            )
+        ),
+        CountIf(            //Count Character Not in the Regex in PhoneTxt
+            Split(
+                PhoneTxt.Value,
+                ""
+            ),
+            Not(
+                IsMatch(
+                    Value,
+                    "([A-Za-z0-9])"
+                )
+            )
+        ),
+        CountIf(          //Count Character Not in the Regex in StateTxt
+            Split(
+                NameTxt.Value,
+                ""
+            ),
+            Not(
+                IsMatch(
+                    Value,
+                    "([A-Za-z0-9])"
+                )
+            )
+        )
+    ) > 0,              //Check if the sum is greater than 0 
+//Check the TextInput Control with the wrong Character
+    "Wrong Character " & "" & If(    
+        CountIf(
+            Split(
+                NameTxt.Value,
+                ""
+            ),
+            Not(
+                IsMatch(
+                    Value,
+                    "([A-Za-z0-9])"
+                )
+            )
+        ) > 0,
+        "in Name text",   
+        If(
+            CountIf(
+                Split(
+                    StateTxt.Value,
+                    ""
+                ),
+                Not(
+                    IsMatch(
+                        Value,
+                        "([A-Za-z0-9])"
+                    )
+                )
+            ) > 0,
+            "in State text",
+            If(
+                CountIf(
+                    Split(
+                        CountryTxt.Value,
+                        ""
+                    ),
+                    Not(
+                        IsMatch(
+                            Value,
+                            "([A-Za-z0-9])"
+                        )
+                    )
+                ) > 0,
+                "in Country text",
+                If(
+                    CountIf(
+                        Split(
+                            AddressTxt.Value,
+                            ""
+                        ),
+                        Not(
+                            IsMatch(
+                                Value,
+                                "([A-Za-z0-9])"
+                            )
+                        )
+                    ) > 0,
+                    "in Address text",
+                    If(
+                        CountIf(
+                            Split(
+                                PhoneTxt.Value,
+                                ""
+                            ),
+                            Not(
+                                IsMatch(
+                                    Value,
+                                    "([A-Za-z0-9])"
+                                )
+                            )
+                        ) > 0,
+                        "in Phone text"
+                    )
+                )
+            )
+        )
+    )
+)
