@@ -1,2 +1,3 @@
 # PowerApps
-Add new development tricks in Power Apps
+This repo is contain snippets to perform various processes in PowerApps 
+Easy to use 
