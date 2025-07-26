@@ -1,4 +1,4 @@
-PowerFx Code 
+ PowerFx Code 
 //Start Button  - UpdateContext({TimerSwitch: true})
 
 //End Button - UpdateContext({TimerSwitch:false});
