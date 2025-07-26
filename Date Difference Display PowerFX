@@ -1,12 +1,8 @@
-Blog Link - https://medium.com/@olumideojoniyi/convert-days-counts-in-powerapps-into-days-ago-weeks-ago-months-ago-790ce43fd43c
-
-
-//CodeSnippet 
 
 With(
     {
         Date: DateDiff(
-            DateValue("31/0/2023"),
+            DateValue(<Enter a date value here>),
             Today()
         )
     },// Dividing DateValue // Assign the Date Value to use into a variable 
