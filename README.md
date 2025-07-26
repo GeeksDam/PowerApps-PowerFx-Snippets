@@ -1,3 +1,2 @@
-# PowerApps
-This repo is contain snippets to perform various processes in PowerApps 
-Easy to use 
+# PowerApps Syntax for common process in PowerApps </br>
+The repo chave various files that contains powerfx snippets for various usage 
