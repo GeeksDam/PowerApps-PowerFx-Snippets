@@ -1,4 +1,4 @@
-//Full Blog link - https://medium.com/@olumideojoniyi/data-input-validation-in-powerapps-fd7e0b9b2db7
+```powerfx
 
 //PowerFx Snippet 
 If(                          //ParentIf 
@@ -141,3 +141,4 @@ If(                          //ParentIf
         )
     )
 )
+```
