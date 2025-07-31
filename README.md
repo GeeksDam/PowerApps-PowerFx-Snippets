@@ -23,7 +23,11 @@ Creating an activivty timer inside Canvas App </br>
 ## Display Collection Data inside HTML Table
 [HTML Table](HTML%20Table%20inside%20CanvasApp)
 
-## Display buttons in Model Driven Apps with Security role 
+## Display buttons in Model Driven Apps with Security Role 
+[webresource JS](Display%20button%20with%20security%20role)
+
+## Display Form Tabs in Model Driven App with Security Role
 [webresource JS]
+
 
 
