@@ -21,6 +21,6 @@ Creating an activivty timer inside Canvas App </br>
 [Editable grid canvas app](How%20to%20create%20a%20an%20editable%20grid%20table%20in%20Canvas%20App.md.md)
 
 ## Display Collection Data inside HTML Table
-[HTML Table](HTML%20Table%20inside%20CanvasApp.md)
+[HTML Table](HTML%20Table%20inside%20CanvasApp)
 
 
