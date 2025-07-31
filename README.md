@@ -1,4 +1,4 @@
-# PowerApps Syntax for common process in PowerApps </br>
+# PowerApps Snippets </br>
 The repo have files that contain powerfx snippets applicable to canvas and model driven apps 
 
 ## Data input validation with Regex
