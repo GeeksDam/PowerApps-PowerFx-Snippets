@@ -1,1 +1,20 @@
+function HideTab(executionContext){
+    var userRoles = Xrm.Utility.getGlobalContext().userSettings.roles;
+    var formContext = executionContext.getFormContext();
+    var hasRole = false;
+    userRoles.forEach(function hasRoleName(item, index) {
+        //Check passed in value for role[].name match 
+        //EnterSecurityRoleNamehere
+        if (item.name === 'Security Role Name') {              
+            //match found set return value to true
+            hasRole = true;
+        };
+    });
+if(hasRole === true){
+    //Enter the tab name here
+    formContext.ui.tabs.get("Tab Name").setVisible(true);     //
+    return true;
+   } 
+}
+
 
